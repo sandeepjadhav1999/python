@@ -1,0 +1,9 @@
+.container{
+    width:600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    margin-top: 10%;
+
+}

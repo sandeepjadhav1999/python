@@ -1,0 +1,43 @@
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.box2 {
+    width: 25vw;
+    height: 25vh;
+    background-color: rgb(145, 140, 210)
+}
+
+.wrapper {
+    font-size: 1em;
+  }
+  
+  .px {
+    width: 200px;
+  }
+  
+  .vw {
+    width: 10vw;
+  }
+  
+  .em {
+    width: 10em;
+  }
+.box3 {
+width : 25%;
+height: 25%;
+background-color: cadetblue;
+  }
+
+.color{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+
+}
+.color:hover{
+    background-color: red;
+    transition-duration: 2s;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hi{
+            color: black;
+            font-size: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            margin: auto;
+        }
+        .color{
+            height: 300px;
+            width: 500px;
+            background-color: greenyellow;
+            border: 5px solid green;
+            margin: auto;
+            margin-top: 15%;
+        }
+    </style>
+</head>
+<body style="background-color: greenyellow;">
+    <form action="{{url_for('index')}}">
+        <div class="color">
+            <div class="hi">
+                <h1 style="text-align: center; margin-top: 20%;">{{amt}} has been withdrawed from your account</h1><br>
+                <h1 style="text-align: center;margin-top: 25%;">your avaliable balance is {{dep}} </h1>
+            </div>
+        </div>
+        <input type="submit" value="home">
+    </form>
+
+</body>
+</html>

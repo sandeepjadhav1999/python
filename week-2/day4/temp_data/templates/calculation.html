@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculation</title>
+    </head>
+    <body>
+        {% if op == 'Add' %}
+        <div>
+            Addition of Two Numbers is {{result}}
+        </div>
+        {% elif op == 'Sub'%}
+        <div>
+            Subtraction of Two Numbers is {{result}}
+        </div>
+        {% elif op == 'Mul'%}
+        <div>
+            Multiplication of Two Numbers is {{result}}
+        </div>
+        {% else %}<div>
+            Division of Two Numbers is {{result}}
+        </div>
+        {% endif %}
+    </body>
+</html>

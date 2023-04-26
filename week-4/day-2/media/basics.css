@@ -1,0 +1,44 @@
+@media screen and (min-width:0px) {
+    .mb{
+        display: none;
+    }
+    .ipad{
+        display: none;
+    }
+    .pc{
+        display: none;
+    }
+}
+@media screen and (min-width:300px) {
+    .mb{
+        display: block;
+    }
+    .ipad{
+        display: none;
+    }
+    .pc{
+        display: none;
+    }
+}
+@media screen and (min-width:800px) {
+    .mb{
+        display: none;
+    }
+    .ipad{
+        display: block;
+    }
+    .pc{
+        display: none;
+    }
+}
+@media screen and (min-width:1024px) {
+    .mb{
+        display: none;
+    }
+    .ipad{
+        display: none;
+    }
+    .pc{
+        display: block;
+    }
+}

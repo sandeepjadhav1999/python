@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .img{
+            background-size: 100% 100%;
+        }
+        .form{
+            margin: auto;
+            background-color: transparent;
+            max-width: 350px;
+            padding: 5px;
+            border-radius: 5px;
+            margin-top: 150px;
+        }
+        input[type=text]{
+            display: inline-block;
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: solid 2px black;
+            margin: 10px 0;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        input[type=submit]{
+            width: 100%;
+            padding: 5px;
+            color:black;
+            background-color:orange;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        h1{
+            color: rgb(1, 45, 238);
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: 100px;
+        }
+        input[type=submit]:hover{
+            background-color: yellow;
+            transition-duration: 2s;
+        }
+        label{
+            color: rgb(0, 0, 0);
+        }
+
+
+    </style>
+</head>
+<body style="background: url({{bg}});" class="img">
+    
+    <form action="{{url_for('dashboard')}}" method="POST">
+        <div class="form">
+            <h1><marquee behavior="alternate" direction="">Login</marquee></h1>
+            <label for="">Username:</label>
+            <input type="text" name="username" placeholder="Enter your Username"><br>
+            <label for="">Password</label>
+            <input type="text" name="password" placeholder="Enter your Password"><br>
+            <input type="submit" name="login">
+        </div>
+    </form>
+</body>
+</html>

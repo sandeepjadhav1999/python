@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Addition</title>
+    </head>
+    <body>
+        <form action="{{ url_for('perform_calculation', op='calc',dt=123, mt=89) }}" method="POST">
+            <div>
+                <input type="number" name="num1" placeholder="Number 1"/>
+            </div>
+            <div>
+                <input type="number" name="num2" placeholder="Number 2"/>
+            </div>
+            <div>
+                <input type="submit" name="action" value="Add"/>
+                <input type="submit" name="action" value="Sub"/>
+                <input type="submit" name="action" value="Mul"/>
+                <input type="submit" name="action" value="Div"/>
+            </div>
+            
+        </form>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+{
+    "name":"abc",
+    "isokay":true,
+    "age":10,
+    "os":"android",
+    "obj":{
+        "dt":"2020-01-01"
+    },
+    "arr":[
+        {
+            "ttl":1,
+            "ip":"localhost"
+        },
+        {
+            "ttl":2,
+            "ip":"localhost"
+        }
+    ]
+}

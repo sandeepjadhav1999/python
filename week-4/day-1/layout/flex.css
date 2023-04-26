@@ -1,0 +1,33 @@
+.box{
+    background-color: red;
+    border: blue 2px solid;
+    width: 100px;
+    height: 100px;
+    margin: 8px;
+}
+.box:hover{
+    background-color: greenyellow; 
+    border-radius: 1200px;
+    transition-duration: 2s;  
+}
+ .parent{
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     align-items: center;
+
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.parent>div:nth-child(2){
+    display: flex;
+    align-self: flex-start;
+}
+.parent>div:nth-child(4){
+    display: flex;
+    align-self: flex-end;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>withdraw</title>
+    <style>
+        body{
+            background: url({{bg}});
+        }
+        .form{
+            margin: auto;
+            background-color: transparent;
+            max-width: 350px;
+            padding: 5px;
+            border-radius: 5px;
+            margin-top: 150px;
+        }
+        input[type=text]{
+            display: inline-block;
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: solid 2px black;
+            margin: 10px 0;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        input[type=submit]{
+            width: 100%;
+            padding: 5px;
+            color:black;
+            background-color:orange;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        input[type=submit]:hover{
+            background-color: yellow;
+            transition-duration: 2s;
+        }
+        label{
+            color: white;
+        }
+        h1{
+            color:blue;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: red;
+        
+        }
+    </style>
+</head>
+<body>
+    <h1><marquee behavior="alternate" direction="">WITHDRAW</marquee></h1>
+    <form action="{{url_for('view_with')}}" method="POST">
+        <div class="form">
+            <label for="">Username</label><br>
+            <input type="text" name="username" placeholder="enter your username">
+            <label for="">Acc_num:</label>
+            <input type="text" name="ac_num" placeholder="Enter your acc_num"><br>
+            <label for="">Amount:</label>
+            <input type="text" name="amount" placeholder="Enter your Password"><br>
+            <input type="submit" name="login">
+        </div>    
+    </form>
+</body>
+</html>

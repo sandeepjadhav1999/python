@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol>
+        <pre style="font-family: 'Times New Roman', Times, serif;">           username     account number</pre><br>
+        {%for key, values in ac.items()%}
+        <li style="margin-left: 50px;">{{key}} : {{values}}</li>
+        {%endfor%}
+    </ol>
+    <form action="{{url_for('index')}}">
+        <input type="submit" value="home page">
+    </form>
+</body>
+</html>
+
